@@ -1,4 +1,3 @@
-# client.py
 import socket
 
 def start_client(server_ip: str, port: int):
