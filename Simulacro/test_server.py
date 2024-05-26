@@ -15,3 +15,5 @@ class TestServer(unittest.TestCase):
             s.sendall("FECHA".encode('utf-8'))
             response = s.recv(1024).decode('utf-8')
             self.assertRegex(response, r"\d{4}-\d{2}-\d{2}")
+if __name__ == "__main__":
+    unittest.main()
