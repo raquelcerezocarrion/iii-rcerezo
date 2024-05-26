@@ -1,19 +1,14 @@
-# tests/test_protocol.py
-import unittest
-from protocol import Protocol
+# protocol.py
+import datetime
 
-class TestProtocol(unittest.TestCase):
-    def test_fecha(self):
-        response = Protocol.handle_message("FECHA")
-        self.assertRegex(response, r"\d{4}-\d{2}-\d{2}")
+class Protocol:
+    @staticmethod
+    def handle_message(message: str) -> str:
+        message = message.strip().upper()
+        if message == "FECHA":
+            return datetime.datetime.now().strftime("%Y-%m-%d")
+        elif message == "HORA":
+            return datetime.datetime.now().strftime("%H:%M:%S")
+        else:
+            return "ERROR"
 
-    def test_hora(self):
-        response = Protocol.handle_message("HORA")
-        self.assertRegex(response, r"\d{2}:\d{2}:\d{2}")
-
-    def test_error(self):
-        response = Protocol.handle_message("HELLO")
-        self.assertEqual(response, "ERROR")
-
-if __name__ == "__main__":
-    unittest.main()
