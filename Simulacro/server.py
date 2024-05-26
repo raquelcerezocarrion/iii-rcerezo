@@ -1,6 +1,14 @@
-# server.py
 import socket
-from protocol import Protocol
+import datetime
+
+def handle_message(message: str) -> str:
+    message = message.strip().upper()
+    if message == "FECHA":
+        return datetime.datetime.now().strftime("%Y-%m-%d")
+    elif message == "HORA":
+        return datetime.datetime.now().strftime("%H:%M:%S")
+    else:
+        return "ERROR"
 
 def start_server(port: int):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -16,7 +24,7 @@ def start_server(port: int):
                     if not data:
                         break
                     message = data.decode('utf-8')
-                    response = Protocol.handle_message(message)
+                    response = handle_message(message)
                     conn.sendall(response.encode('utf-8'))
 
 if __name__ == "__main__":
