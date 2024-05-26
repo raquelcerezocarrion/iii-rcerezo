@@ -1,10 +1,30 @@
-public class HolaMundo{
-public static void main(String[] args){
-System.out.println("Otro Hola mundo");
-printCourse();
-}
-public static void printCourse(){ System.out.println("Introducción Ingenieria Informática");}
-}
+Manual de usuario para la instalación
+  # Manual de Usuario para la instalación del Sistema Cliente-Servidor en Visual Studio Code
+
+#### Responsable del desarrollo del proyecto:
+* Raquel Cerezo Carrión
+
+## Instrucciones paso a paso para la instalación
+
+#### Realize en el orden que se establece a continuación los siguientes pasos para lograr ejecutar el código con éxito y obtener los resultados deseados. En este manual se indica al usuario los pasos para la ejecución del proyecto empleando "Visual Studio Code".
+
+1. Acceda a la página oficial de Visual Studio Code, a través del siguiente enlace e instalelo en su equipo.
+2. [Clic aquí para instalar Visual Studio](https://code.visualstudio.com/), descargue la versión adecuada para su sistema operativo siguiendo las instrucciones que se le proporcionan en dicha web.
+2. Abre Visual Studio Code.
+3. Haz clic en el ícono de extensiones en la barra lateral izquierda.
+4. Busca "Python" en la barra de búsqueda.
+5. Instala la extensión "Python" proporcionada por Microsoft.
+6. Accede a la página oficial de python pinchando en el siguiente link [Clic aquí para instalar Python](https://www.python.org/), descarga e instala Python siguiendo las instrucciones para tu sistema operativo.
+7. Clona el repositorio o descarga el código fuente desde el repositorio proporcionado, (descomprima el archivo en caso de que fuese necesario).
+
+### Pasos para abrir el proyecto desde Visual Studio Code
+
+1. Abra visual studio code.
+2. Haga clic en "File" en la esquina superior izquierda y seleccione la opción "Open Folder".
+3.Busque la carpeta del proyecto y ábrala
+
+Para saber cómo ejecutar el proyecto consulte el "Manual de Ejecución del Sistema Cliente-Servidor en Visual Studio Code".
+  
 
 
 
