@@ -1,1 +1,35 @@
-Manual de Ejecución
+# Manual de Usuario para la Ejecución del Sistema Cliente-Servidor en Visual Studio Code
+
+#### Responsable del desarrollo del proyecto:
+* Raquel Cerezo Carrión
+
+## Instrucciones paso a paso para la ejecución
+
+#### Consulte previamente el manual de instalación para constar de los requisitos técnicos necesarios para la ejecución del proyecto. Una vez haya seguido los pasos de instalación, siga los siguientes pasos para la ejecución del proyecto:
+
+Abra el proyecto con visual studio code (consulte manual de instalación para los detalles de esto).
+ 
+#### Primeramente vamos a iniciar el servidor:
+
+1. Haga clic en "Terminal" en la barra de menú superior y selecciona "New Terminal". Esto le  abrirá una terminal en la parte inferior de Visual Studio Code.
+2.  Acceda al directorio src del proyecto con el comando "cd src".
+3. Ejecute el siguiente comando para ejecutar el servidor: **python3 servidor.py**
+3. Tras esto, el servidor estará esperando al cliente por lo que vamos a ejecutar a continuación el cliente como se indica en el siguiente apartado.
+#### Pasos para iniciar al cliente:
+1. **Abra otra terminal en Visual Studio Code**.
+2. Acceda al directorio src con el comando "cd src".
+3. Ejecute al cliente con el comando **python3 cliente.py**
+4. El cliente le pedirá que ingrese la información necesaria.
+
+#### Explicación del funcionamiento de la dinámica Cliente-Servidor
+
+1. El cliente enviará la información al servidor.
+2. El servidor recibirá el nombre del fichero, abrirá el fichero solicitado y enviará su contenido de vuelta al cliente.
+3.El cliente mostrará el contenido del fichero recibido desde el servidor.
+
+#### Consideraciones importantes
+1. Para detener al servidor presione "Ctrl+C" posiconándose en la terminal del servidor.
+2. Es muy aconsejable usar puertos únicos para evitar posibles colisiones, esto puede ser configurado en los propios archivos "cliente.py" y "servidor.py" con la constante "PORT", establezca uno distinto para el cliente y otro para el servidor y aségurese que el puerto asignado no esté siendo empleado en otras aplicaciones o servicios.
+
+Siguiendo los pasos que se le han proporcionado podrá ejecutar el proyecto "Cliente-Servidor" empleando la herramienta Visual Studio Code.
+
