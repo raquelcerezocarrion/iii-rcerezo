@@ -9,3 +9,5 @@ python3 cliente.py localhost "LINEA 0"
 python3 cliente.py localhost "RANGO 0-2"
 python3 cliente.py localhost "TOTAL"
 todo desde www
+comando para correr los test python3 -m unittest test_servidor.py
+
