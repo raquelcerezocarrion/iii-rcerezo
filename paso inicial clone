@@ -5,3 +5,7 @@ git clone https://git.eps.ceu.es/ped/examen
 git config credential.helper "cache --timeout=7200"
 git config --global user.email "tu correo"
 git config --global user.name "tu nombre"
+python3 cliente.py localhost "LINEA 0"
+python3 cliente.py localhost "RANGO 0-2"
+python3 cliente.py localhost "TOTAL"
+todo desde www
